@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pikus Pokedex</title>
+    <link rel="stylesheet" href="style.css" />
+	<script src="app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="page-wrapper">
+        <header class="page-header">
+            <h1>Fetch the Pok&eacute;mon</h1>
+            <p class="subtitle">Search for your favorite & discover new Pok&eacute;mon characters.</p>
+        </header>
+
+
+        <section class="search-section" aria-label="Find a Pokemon">
+            <form id="search-form" class="poke-search">
+                <input id="search-input" type="search" placeholder="Search by Pok&eacute;mon name or ID">
+                <button type="submit" class="button-primary">Fetch the Pok&eacute;mon!</button>
+            </form>
+            <div class="divider"><span>or</span></div>
+            <div class="surprise">
+                <button class="button-primary xl" id="random-select" aria="Display random Pokemon">🎲 Surprise Me!</button>
+            </div> 
+            <div class="clear">
+                <button style="display: none;" class="clear-btn" id="clear-select" aria-label="Clear selection">X Clear selection</button>
+        </div>
+
+        </section>
+
+        <!-- <section class="surprise-section" aria-label="Search for a Pokemon">
+            <div class="surprise">
+                <button class="button-secondary" id="random-select" aria="Display random Pokemon">Surprise Me!</button>
+                <button style="display: none;" class="clear-btn" id="clear-select" aria-label="Clear selection">X Clear selection</button>
+            </div>
+
+        </section> -->
+
+        <section class="browse-section" aria-label="Find a Pokemon" style="display:none;">
+        <div class="browse-buttons">
+            <button class="button-secondary" id="previous-btn" aria-label="Previous Pokemon">&larr; Previous</button>            
+            <button class="button-secondary" id="next-btn" aria-label="Next Pokemon">Next &rarr;</button>
+        </div>
+        </section>
+
+        <section class="result-section">
+            <div id="loading" style="display: none; font-weight: bold; color: #555;">
+                Loading data, please wait...
+            </div>
+        </section>
+    </main>
+     <footer>
+       &copy; Rachel P &bull; 2026
+    </footer>
+</body>
+</html>
