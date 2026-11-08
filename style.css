@@ -127,7 +127,7 @@ p {
 }
 
 .poke-search {
-    display: flex;
+  display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
@@ -137,7 +137,7 @@ p {
 }
 
 input {
-    width: 100%;
+  width: 100%;
 	min-height: 42px;
 	border: 1px solid #C2D5E4;
 	border-radius: 9px;
@@ -146,6 +146,9 @@ input {
 	color: #192a3a;
 }
 
+input [type="search"] {
+  font-size: 16px;
+}
 
 
 .button-primary {
@@ -217,7 +220,7 @@ input {
 
 .clear {
 
-    text-align: center;
+  text-align: center;
 }
 
 .surprise-section {
@@ -227,7 +230,7 @@ input {
 	box-shadow: 0 5px 20px rgb(28 54 75 / 4%);
 	padding: 20px;
 	margin-bottom: 20px;
-    margin-top: 20px;
+  margin-top: 20px;
 
 }
 
